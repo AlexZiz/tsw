@@ -1,0 +1,153 @@
+/*======================
+  Общие стили
+======================*/
+
+body {
+  margin: 0;
+  font-family: "Arial";
+  font-size: 14px;
+  background-color: #626262;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.wraper {
+  margin: auto;
+  max-width: 1050px;
+  background-color: #ffffff;
+}
+
+.clearfix:after {/*Убираем обтекание родительского блока*/
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/*======================
+  Шапка
+======================*/
+
+header {
+  padding: 35px 0 30px 50px;
+}
+header img {
+  float: right;
+  margin: 0 30px 0 0;
+}
+
+header > nav li {
+  padding: 30px 20px;
+}
+
+.top-menu li {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.top-menu li.active {
+  text-decoration: underline;
+}
+
+.top-menu li:hover {
+  text-decoration: underline;
+}
+
+.top-menu a {
+  color: #7c7c7c;
+}
+
+/*======================
+  Контент
+======================*/
+
+section .city {
+  height: 500px;
+  padding: 0;
+  background: url(../img/city-bg.png) no-repeat;
+}
+.content-city {
+  display: inline-block;
+  float: left;
+}
+
+.arrow {/*Круглые кнопки*/
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background-color: rgba(39,39, 39, 0.5);
+  box-shadow: 0 0 0 5px rgba(101, 101, 101, 0.5);
+}
+
+.left-arrow {
+  margin: 230px 35px 0 10px;
+}
+
+.right-arrow {
+  float: right;
+  margin: 230px 10px 0 55px;
+}
+
+section.city-text {
+  display: block;
+  margin: 200px 65px 0 0;
+  color: #ffffff;
+}
+
+.city-text h1 {
+  display: block;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 48px;
+  font-weight: 100;
+  line-height: 1.2em;
+  border: 1px solid red;
+}
+
+.city-text p {
+  display: block;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.city-text span {
+  font-weight: bold;
+}
+
+.butt-city li {
+  display: inline-block;
+  margin: 30px 20px;
+  padding: 10px 50px;
+  border-radius: 3px;
+  background-color: #1fb39f;
+  box-shadow: 0 0 0 4px rgba(101, 101, 101, 0.5);
+}
+
+.butt-city li.active {
+  border-radius: 0;
+  background-color: rgba(51, 134, 123, 0.5);
+}
+
+.butt-city li:hover {
+  border-radius: 0;
+  background-color: rgba(51, 134, 123, 0.5);
+}
+
+.butt-city a {
+  color: #ffffff;
+}
+
+section img {
+ margin: 50px 0 0 0;
+}
+/*======================
+  Подвал 
+======================*/
