@@ -18,6 +18,10 @@ nav a {
   text-decoration: none;
 }
 
+img {
+  margin: 0;
+}
+
 .wraper {
   margin: auto;
   max-width: 1048px;
@@ -39,11 +43,14 @@ nav a {
 header {
   padding: 35px 0 30px 50px;
 }
+
+/*Логотип*/
 header img {
   float: right;
   margin: 0 30px 0 0;
 }
 
+/*Меню шапки - главное меню*/
 header > nav li {
   padding: 30px 20px;
 }
@@ -69,6 +76,7 @@ header > nav li {
   Контент
 ======================*/
 
+/*Блок с фоновым изображением города*/
 section .city {
   position: relative;
   height: 500px;
@@ -134,23 +142,19 @@ section .city-text {
   margin-left: 115px;
 
 }
-.butt-city li {
+.butt-city li {/*стиль кнопок по умолчанию*/
   display: inline-block;
   margin: 30px 20px;
   padding: 10px 50px;
+  border-radius: 0;
   border-radius: 3px;
-  background-color: #1fb39f;
+  background-color: rgba(51, 134, 123, 0.5);
   box-shadow: 0 0 0 4px rgba(101, 101, 101, 0.5);
 }
 
-.butt-city li.active {
-  border-radius: 0;
-  background-color: rgba(51, 134, 123, 0.5);
-}
-
-.butt-city li:hover {
-  border-radius: 0;
-  background-color: rgba(51, 134, 123, 0.5);
+.butt-city li:hover {/*стиль кнопок при наведении*/
+  background-color: #1fb39f;
+  box-shadow: 0 0 0 4px rgba(101, 101, 101, 0.5);
 }
 
 .butt-city a {
@@ -162,10 +166,8 @@ section img {
  margin: 50px 0 0 0;
 }
 
-
-
-/* Центральный блок с текстом и стрелкой
-=======================================*/
+/* Центральный блок с текстом и серой стрелкой
+===============================================*/
 .content {
   position: relative;
 }
@@ -180,13 +182,99 @@ section img {
 /*стрелка вниз*/
 .bottom-arrow {
   position: absolute;
-  left: 50%;
+  left: 48%;
   bottom: 30px;
   width: 57px;
   height: 57px;
   background-image: url(../img/bottom-arrow.png);
   background-repeat: no-repeat;
 }
+
+/* Блок с фотографиями
+=======================*/
+
+.slide {
+  background-color: #e3e3e3;
+  padding: 10px 35px 0 40px;
+}
+
+.block-link {
+  position: relative;
+  z-index: 10;
+}
+
+.slide-butt {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 25px;
+  color: #ffffff;
+  background-color: rgba(29, 140, 124, .5);
+  z-index: 20;
+  /*border: 1px solid red;*/
+}
+
+.slide-butt p {
+  float: left;
+  margin: 0;
+  padding: 20px 25px;
+}
+
+.slide-arrow {
+  float: right;
+  margin: 10px 5px;
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/white-arrow.png);
+  background-repeat: no-repeat;
+}
+
+.slide figure {
+  display: inline-block;
+  margin: 0;
+}
+
+.slide figure {
+  margin-right: 10px;
+  margin-bottom: 10px
+}
+
+.slide img {
+  display: block;
+  margin: 0;
+}
+
+.slide figure:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* Цитата
+=======================*/
+
+.quote h2 {
+  display: block;
+  margin: 0;
+  padding: 50px 60px;
+  font-size: 25px;
+  font-weight: 200;
+  text-align: center;
+}
+
+blockquote {
+  margin: 0;
+  text-align: center;
+}
+
+blockquote:before {
+    color: #bbb;
+    content: "\201C"; /* Непечатаемый символ слева */
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-right: 0.2em;
+    vertical-align: -.4em;
+}
+
+
 /*======================
   Подвал 
 ======================*/
