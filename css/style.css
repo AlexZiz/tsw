@@ -293,7 +293,7 @@ cite {
 }
 
 /* Светлозеленый блок  с кнопкой
-=======================*/
+================================*/
 
 .client-footer {
   margin: 0;
@@ -303,23 +303,49 @@ cite {
 
 .client-butt {
   margin: auto;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 15px 0;
   width: 400px;
-  height: 50px;
   font-size: 18px;
-  color: #5bcdbe;
   border-radius: 5px;
   background-color: #ffffff;
   box-shadow: -2px 2px 2px rgba(90, 90, 90, .5) 
 }
 
-.client-butt span {
+.client-butt a {
   display: block;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+   color: #5bcdbe;
   text-align: center;
-  border: 1px solid red;
 }
 /*======================
   Подвал 
 ======================*/
+
+footer {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.footer {
+  margin: auto;
+  width: 1048px;
+  padding: 40px 30px;
+  background-color: #3a3a3a;
+  
+}
+
+/* Логотип
+===========*/
+
+.foot-logo {
+  margin: left;
+  font-size: 31px;
+}
+
+.foot-logo a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
