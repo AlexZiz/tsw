@@ -44,14 +44,12 @@ header {
   padding: 35px 0 30px 50px;
 }
 
-/*Логотип*/
-header img {
+header img {/*Логотип*/
   float: right;
   margin: 0 30px 0 0;
 }
 
-/*Меню шапки - главное меню*/
-header > nav li {
+header > nav li {/*Меню шапки - главное меню*/
   padding: 30px 20px;
 }
 
@@ -60,7 +58,7 @@ header > nav li {
   font-size: 15px;
 }
 
-.top-menu li.active {
+.top-menu .active {
   text-decoration: underline;
 }
 
@@ -76,8 +74,7 @@ header > nav li {
   Контент
 ======================*/
 
-/*Блок с фоновым изображением города*/
-section .city {
+section .city {/*Блок с фоновым изображением города*/
   position: relative;
   height: 500px;
   padding: 0;
@@ -85,13 +82,11 @@ section .city {
   background-repeat: no-repeat;
 }
 
-/*Блок с текстом и с телефоном*/
-.content-city {
+.content-city {/*Блок с текстом и с телефоном*/
   float: left;
 }
 
-/*Стрелки навигации*/
-.left-arrow {
+.left-arrow {/*Стрелки навигации*/
   position: absolute;
   top: 45%;
   left: 10px;
@@ -108,7 +103,7 @@ section .city {
   right:10px;
   width: 70px;
   height: 70px;
-  background: url(../img/sprite-arrow.png);
+  background-image: url(../img/sprite-arrow.png);
   background-position: no-repeat;
   background-position: -80px 0;
 }
@@ -137,8 +132,7 @@ section .city-text {
   font-weight: bold;
 }
 
-/*Зеленые кнопки*/
-.content-city nav {
+.content-city nav {/*Зеленые кнопки*/
   margin-left: 115px;
 
 }
@@ -161,13 +155,13 @@ section .city-text {
   color: #ffffff;
 }
 
-/*iphone*/
-section img {
- margin: 50px 0 0 0;
+section img {/*iphone*/
+  margin: 50px 0 0 0;
 }
 
 /* Центральный блок с текстом и серой стрелкой
 ===============================================*/
+
 .content {
   position: relative;
 }
@@ -179,8 +173,7 @@ section img {
   color: #5d5d5d;
 }
 
-/*стрелка вниз*/
-.bottom-arrow {
+.bottom-arrow {/*стрелка вниз*/
   position: absolute;
   left: 48%;
   bottom: 30px;
@@ -211,7 +204,6 @@ section img {
   color: #ffffff;
   background-color: rgba(29, 140, 124, .5);
   z-index: 20;
-  /*border: 1px solid red;*/
 }
 
 .slide-butt p {
@@ -268,20 +260,20 @@ blockquote {
 }
  
 blockquote p:before {
-    color: #bbb;
-    content: "\201C"; /* Непечатаемый символ слева */
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.2em;
-    vertical-align: -.4em;
+  color: #bbb;
+  content: "\201C"; /* Непечатаемый символ слева */
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.2em;
+  vertical-align: -.4em;
 }
  
 blockquote p:after {
-    color: #bbb;
-    content: "\201D"; /* Непечатаемый символ справа */
-    font-size: 4em;
-    line-height: 0.1em;
-    vertical-align: -.45em;
+  color: #bbb;
+  content: "\201D"; /* Непечатаемый символ справа */
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -.45em;
 }
 
 cite {
@@ -316,16 +308,32 @@ cite {
   margin: 0;
   padding: 0;
   text-decoration: none;
-   color: #5bcdbe;
+  color: #5bcdbe;
   text-align: center;
 }
 /*======================
   Подвал 
 ======================*/
 
+.fl-left {/* общий класс для блоков footer; прижимаем к левому краю*/
+  float: left;
+} 
+
 footer {
   font-size: 15px;
   color: #ffffff;
+}
+
+footer h3 {
+  margin: 0;
+  font-family: "Arial";
+  font-size: 15px;
+  color: #ffffff;
+}
+
+footer p {
+  display: block;
+  margin-top: 20px;
 }
 
 .footer {
@@ -340,12 +348,67 @@ footer {
 ===========*/
 
 .foot-logo {
-  margin: left;
   font-size: 31px;
 }
 
-.foot-logo a {
+.foot-logo a { 
+  margin: 40px 70px 0 30px;
   text-decoration: none;
   color: #ffffff;
 }
 
+/* О Компании
+==============*/
+
+.compani {
+  margin-right: 130px;
+}
+
+.compani ul {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.compani li {
+  list-style: none;
+}
+
+.compani a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Адрес
+=========*/
+
+.address {
+  margin-right: 120px;
+}
+
+/* Пост
+=========*/
+
+.post a {
+  margin: 0;
+}
+
+.social-icon {/*Социальные иконки*/
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/social.png);
+  background-repeat: no-repeat;
+}
+
+.twitter {
+  background-position: 0 5px;
+}
+.faseb {
+  background-position: -37px 3px;
+}
+.googlp {
+  background-position: -76px 5px;
+}
+.skype {
+  background-position: -120px 3px;
+}
