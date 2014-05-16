@@ -301,7 +301,9 @@ cite {
   font-size: 18px;
   border-radius: 5px;
   background-color: #ffffff;
-  box-shadow: -2px 2px 2px rgba(90, 90, 90, .5) 
+  box-shadow: -2px 2px 2px rgba(90, 90, 90, .5);
+  -webkit-box-shadow: -2px 2px 2px rgba(90, 90, 90, .5);
+  -moz-box-shadow: -2px 2px 2px rgba(90, 90, 90, .5);
 }
 
 .client-footer a {
@@ -309,6 +311,7 @@ cite {
   color: #5bcdbe;
   text-align: center;
 }
+
 /*======================
   Подвал 
 ======================*/
