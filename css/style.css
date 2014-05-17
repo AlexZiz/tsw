@@ -354,8 +354,11 @@ footer p {
 
 .foot-logo a { 
   margin: 40px 70px 0 30px;
-  text-decoration: none;
-  color: #ffffff;
+  padding: 0;
+}
+
+.foot-logo img {
+  margin: 0;
 }
 
 /* О Компании
